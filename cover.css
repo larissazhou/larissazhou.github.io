@@ -101,10 +101,6 @@ p {   font-family:"Nunito", serif;font-size: 22px;
   border-bottom-color: #fff;
 }
 
-#fixed.nav-bar{
-  overflow:hidden;
-}
-
 .sticky{
   position:fixed;
   top: 0;
