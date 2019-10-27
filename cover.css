@@ -75,11 +75,11 @@ p {   font-family:"Nunito", serif;font-size: 22px;
 
 .masthead-brand {
   margin-bottom: 0;
-  font-family:"Nunito", serif;font-size: 30px;
+  font-family:"Nunito", serif;font-size: 35px;
 }
 
 .nav-masthead .nav-link {
-  padding: .25rem 0;
+  padding: 1rem 0;
   font-family:"Nunito", serif;font-size: 22px;
   font-weight: bold;
   color: rgba(255,255,255,.5);
@@ -101,6 +101,17 @@ p {   font-family:"Nunito", serif;font-size: 22px;
   border-bottom-color: #fff;
 }
 
+#fixed.nav-bar{
+  overflow:hidden;
+}
+
+.sticky{
+  position:fixed;
+  top: 0;
+  width: 100%;
+}
+
+}
 @media (min-width: 48em) {
   .masthead-brand {
     float: left;
@@ -116,7 +127,7 @@ p {   font-family:"Nunito", serif;font-size: 22px;
  */
 
 .cover {
-  padding: 0 1.5rem;
+  padding: 0 .25rem; /*.25 rem is how wide the body text is*/
   font-family:"Nunito", serif;font-size: 22px;
 }
 .cover .btn-lg {
