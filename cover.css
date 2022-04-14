@@ -6,7 +6,7 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: ##efa377;
 }
 
 /* Custom default button */
@@ -27,10 +27,10 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #000000;
+  background-color: #eaf6ea;
 }
 body {
-  color: #fff;
+  color: #193617;
   text-align: center;
   <!--text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);-->
 
@@ -38,7 +38,7 @@ body {
 p {   font-family:"Nunito", serif;font-size: 16px;
  text-align: justify;
  line-height: 1.5;
- margin: 30px 0;
+ margin: 15px 0;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -47,8 +47,7 @@ p {   font-family:"Nunito", serif;font-size: 16px;
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
-          box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -82,7 +81,7 @@ p {   font-family:"Nunito", serif;font-size: 16px;
   padding: 1rem 0;
   font-family:"Nunito", serif;font-size: 22px;
   font-weight: bold;
-  color: rgba(255,255,255,.5);
+  color: #000000;
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
@@ -97,7 +96,7 @@ p {   font-family:"Nunito", serif;font-size: 16px;
 }
 
 .nav-masthead .active {
-  color: #fff;
+  color: #efa377;
   /*border-bottom-color: #fff;*/
 }
 
