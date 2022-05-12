@@ -6,7 +6,7 @@
 a,
 a:focus,
 a:hover {
-  color: ##efa377;
+  color: #77c3ef;
 }
 
 /* Custom default button */
@@ -27,10 +27,10 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #eaf6ea;
+  background-color: #000000;
 }
 body {
-  color: #193617;
+  color: #FFFFFF;
   text-align: center;
   <!--text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);-->
 
@@ -81,7 +81,7 @@ p {   font-family:"Nunito", serif;font-size: 16px;
   padding: 1rem 0;
   font-family:"Nunito", serif;font-size: 22px;
   font-weight: bold;
-  color: #000000;
+  color: #FFFFFF;
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
