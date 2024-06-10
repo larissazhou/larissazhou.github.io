@@ -116,7 +116,6 @@ p {   font-family:"Nunito", serif;font-size: 16px;
   }
 }
 
-
 /*
  * Cover
  */
@@ -139,6 +138,24 @@ p {   font-family:"Nunito", serif;font-size: 16px;
 .mastfoot {
   color: rgba(255,255,255,.5);
 }
+
+/*
+ * button
+ */
+
+ .button {
+   background-color: #04AA6D; /* Green */
+   border: none;
+   border-radius: 12px;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 0 auto; // auto left/right margins
+   display: block;
+ }
 
 
 /*
