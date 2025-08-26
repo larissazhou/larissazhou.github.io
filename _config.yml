@@ -1,6 +1,6 @@
-title: "Your Name"
+title: "Larissa Zhou"
 description: "Personal site + blog"
-url: "https://YOUR_GITHUB_USERNAME.github.io"
+url: "https://larissazhou.github.io"
 baseurl: "" # leave empty for user/organization sites
 theme: minima
 plugins:
