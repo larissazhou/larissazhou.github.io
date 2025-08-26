@@ -1,0 +1,13 @@
+title: "Your Name"
+description: "Personal site + blog"
+url: "https://YOUR_GITHUB_USERNAME.github.io"
+baseurl: "" # leave empty for user/organization sites
+theme: minima
+plugins:
+  - jekyll-feed
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /blog/:year/:month/:day/:title/
+# If your root has an existing index.html, you can keep it. Jekyll will copy it through.
+# Add "blog" to your nav by linking to /blog/
