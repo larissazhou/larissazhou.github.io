@@ -5,7 +5,7 @@ date: 2025-08-26 09:00:00 +0500
 categories: [general]
 ---
 
-Last week, I had two coaching conversations in which the clients, both women, mentioned the words “motherhood” and “stew” in the same breath. What were the chances?!
+Last week, I had two coaching conversations in which both women mentioned the words “motherhood” and “stew” in the same breath. What were the chances?!
 
 By many measures, these women felt that they had good jobs. They’ve been thinking about moving on to something different, and an earlier version of themselves knew how to move onto the next thing. But when they think about having a baby, they get the sense that maybe what they want of their jobs will be different, but they're also not sure exactly how it'll be different. The result is that they’ve been stuck, neither doubling down nor moving on, in a stew of uncertainty. The impact of staying in the stew is that, as huge changes take place in their personal lives, they're not proactively building a professional container that will support them as a mother.
 
