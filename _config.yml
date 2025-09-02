@@ -1,5 +1,5 @@
 title: "Larissa Zhou"
-description: "Personal site + blog"
+description: ""
 url: "https://larissazhou.github.io"
 baseurl: "" # leave empty for user/organization sites
 theme: minima
@@ -8,6 +8,6 @@ plugins:
 markdown: kramdown
 kramdown:
   input: GFM
-permalink: /blog/:year/:month/:day/:title/
+permalink: /blog/:year/:month/:day/
 # If your root has an existing index.html, you can keep it. Jekyll will copy it through.
 # Add "blog" to your nav by linking to /blog/
