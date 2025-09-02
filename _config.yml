@@ -1,6 +1,6 @@
 title: "Larissa Zhou"
 description: "Personal site + blog"
-url: "https://larissazhou.github.io/coaching"
+url: "https://larissazhou.github.io"
 baseurl: "" # leave empty for user/organization sites
 theme: minima
 plugins:
