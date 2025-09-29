@@ -29,4 +29,4 @@ First, give yourself permission to be in it. Uncertainty is uncomfortable, but i
 
 3. Take One Small Step: Start by identifying one thing you can do this week to move forward—whether it’s updating your resume, having a conversation with your partner, or simply journaling about what you want. You don’t need to have the perfect plan. Action creates momentum.
 
-If this resonates with you, and you’re ready to stop spinning your wheels and start building a career that supports the life you want, consistently and with more ease and grace than doing it on your own, coaching might be the next step.
+If this resonates with you, and you’re ready to stop spinning your wheels and start building a career that supports the life you want, consistently, and with more ease and grace than doing it on your own, [apply for a strategy session](https://tally.so/r/nGZVpZ).
