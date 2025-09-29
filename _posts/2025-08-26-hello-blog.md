@@ -15,7 +15,7 @@ That conversation with my coach was a come-to-Jesus moment for me. I saw the cos
 
 In my conversation with one of the lovely stewy women, we brainstormed what it would look like to use extrapolation as a planning strategy. Extrapolate how we’d likely feel and want based on what we knew about ourselves and learning from friends ahead of us on the motherhood journey. And then make career decisions based on those likelihoods. But as the philosopher [LA Paul describes](https://lapaul.org/papers/whatCantExpect.pdf), matrescence is an epistemological transformative experience:
 
-> “...since having one’s own child is unlike any other human experience, before she has had the experience of seeing and touching her newborn child, not only does she not know what it is like to have her child, she cannot know. *Like the experience of seeing color for the first time, the experience of having a child is not projectable.*”
+> “...since having one’s own child is unlike any other human experience, before she has had the experience of seeing and touching her newborn child, not only does she not know what it is like to have her child, she cannot know. Like the experience of seeing color for the first time, the experience of having a child is not projectable.”
 
 Instead, through hard lessons learned, I created a system of support that gave me the tools to gain awareness, reflect, and update my personal values and priorities *in real time*. I developed a love of subreddits where women got real about their changing identities and in the process validated my raw feelings, shared more openly with friends about my private struggles, looked for one couples therapist and ended up with two and kept both, and leaned hard on my coach who I first hired to make the most of a post-PhD sabbatical but who ended up supporting me in motherhood, moving continents, and starting a business all at the same time.
 
@@ -29,4 +29,4 @@ First, give yourself permission to be in it. Uncertainty is uncomfortable, but i
 
 3. Take One Small Step: Start by identifying one thing you can do this week to move forward—whether it’s updating your resume, having a conversation with your partner, or simply journaling about what you want. You don’t need to have the perfect plan. Action creates momentum.
 
-If this resonates with you, and you’re ready to stop spinning your wheels and start building a career that supports the life you want, consistently and with more ease and grace than doing it on your own, coaching might be the next step. 
+If this resonates with you, and you’re ready to stop spinning your wheels and start building a career that supports the life you want, consistently and with more ease and grace than doing it on your own, coaching might be the next step.
