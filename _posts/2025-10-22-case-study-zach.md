@@ -18,7 +18,7 @@ I had also never done coaching before and I wasn't sure if it was the right choi
 
 **I’ve made a huge career change.** I started out working in computer science and now I'm working in food science.
 
-* I've already had two jobs in food science.
+* I've already had two paid jobs in food science.
 * I built a great network of people in the food industry.
 * I've gotten a lot more comfortable advocating for myself.
 
@@ -41,9 +41,9 @@ If I hadn't worked with Larissa, I think I would have spent a lot more time trea
 I think you should work with Larissa if you feel stuck in your current career even if you don't know what you want to do or you're worried it's impossible to make a change. I think it's worth trying coaching. Something else that's helpful is being open to changing how you approach things and also being willing to put in the time to get results.
 
 <p align="center">🪷</p>
-If you are (or know) a young person ready to build a career with purpose, direction, and passion, let’s talk.
+If you are (or know) a young person ready to build a career with purpose, direction, and curiosity, let’s talk.
 
-
+<font size="5">
 <p align="center">
-  <font size="3"><a href="https://tally.so/r/nGZVpZ">Apply for a free strategy session</a></font>
-</p>
+  <a href="https://tally.so/r/nGZVpZ">Apply for a free strategy session</a>
+</p></font>
