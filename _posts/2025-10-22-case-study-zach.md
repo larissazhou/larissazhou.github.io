@@ -4,8 +4,6 @@ title: "Case Study: Zach Broke Into the Food Industry With a CS Degree"
 date: 2025-10-22 09:00:00 +0500
 categories: [case study]
 ---
-# Case Study: Zach Broke Into the Food Industry With a CS Degree
-
 *Zach Schulz is a computer scientist turned food applications chef. He worked with me 1-on-1 for a year.*
 
 <font size="5"> What made you want to work with Larissa? </font>
