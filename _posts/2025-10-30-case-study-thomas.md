@@ -11,7 +11,7 @@ For privacy reasons, Thomas’s last name has been omitted, but his story and ex
 
 When I first started working with Larissa, I was struggling with various kinds of interpersonal conflicts. I think in particular, I was struggling the most with my own tendencies to please people and to seek approval. I wasn't feeling secure about expressing my needs, expressing my ideas and conflicts. And that had taken a very heavy toll on my leadership role at the company I’d co-founded.
 
-**<font size="5"> **What was your biggest hesitation? </font>**
+**<font size="5"> What was your biggest hesitation? </font>**
 
 I wasn't sure about the prospect of me actually fixing these issues because they have been with me for a very long time. Over many years, I have sought help in different forms and I felt like I didn't really get to the bottom of it. I wasn’t sure if these sessions that I would be doing with Larissa would change things significantly.
 
