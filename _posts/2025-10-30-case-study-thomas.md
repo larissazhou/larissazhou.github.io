@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Case Study: Thomas’s Year of Hard Conversations -- How He Stopped Avoiding Conflict and Started Leading Authentically"
+title: "Case Study: Thomas Is No Longer Afriad Of Interpersonal Conflict"
 date: 2025-10-30 09:00:00 +0500
 categories: [case study]
 ---
