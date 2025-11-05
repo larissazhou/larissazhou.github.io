@@ -8,7 +8,7 @@ body {
 
 /* Links */
 a {
-  color: #0ea5a3;                 /* teal accent */
+  color: #77c3ef;                 /* blue accent */
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: color 0.2s ease, border-color 0.2s ease;
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Post titles */
 .post-title, .page-title {
-  color: #0ea5a3;
+  color: #77c3ef;
 }
 
 /* Limit text width for easier reading */
