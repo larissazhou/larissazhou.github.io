@@ -1,0 +1,32 @@
+/* Add custom styles here if you like */
+---
+---
+
+/* Test change */
+.post-title, .page-title, h1, h2 {
+  color: #0ea5a3 !important; /* teal */
+}
+
+/* General blog palette */
+body {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+a {
+  color: #0ea5a3;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+a:hover {
+  opacity: 0.9;
+}
+
+/* Optional typography */
+body {
+  font-family: "Inter", system-ui, sans-serif;
+}
+h1, h2, h3 {
+  font-family: "Fraunces", Georgia, serif;
+  letter-spacing: -0.01em;
+}
