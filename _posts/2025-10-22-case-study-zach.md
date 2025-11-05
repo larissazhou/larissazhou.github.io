@@ -45,5 +45,5 @@ If you are (or know) a young person ready to build a career with purpose, direct
 
 <font size="5">
 <p align="center">
-  <a href="https://tally.so/r/nGZVpZ">Apply for a free strategy session</a>
+  <a href="https://larissazhou.github.io/apply.html">Apply for a free strategy session</a>
 </p></font>

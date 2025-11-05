@@ -50,5 +50,5 @@ If you want to learn how to navigate hard conversations with investors, co-found
 
 <font size="5">
 <p align="center">
-  <a href="https://tally.so/r/nGZVpZ">Apply for a free strategy session</a>
+  <a href="https://larissazhou.github.io/apply.html">Apply for a free strategy session</a>
 </p></font>
