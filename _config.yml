@@ -1,9 +1,8 @@
 title: "Larissa Zhou"
 description: ""
 url: "https://larissazhou.github.io"
-baseurl: "" # leave empty for user/organization sites
-minima:
-  skin: dark
+baseurl: "/coaching" # leave empty for user/organization sites
+theme:
 plugins:
   - jekyll-feed
 markdown: kramdown
