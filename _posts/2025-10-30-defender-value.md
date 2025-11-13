@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Figure Out the Real Reason You're Stuck"
-date: 2025-11-14 09:00:00 +0500
+date: 2025-11-13 09:00:00 +0500
 categories: [worksheet]
 ---
 
