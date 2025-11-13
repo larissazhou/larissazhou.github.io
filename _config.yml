@@ -2,7 +2,7 @@ title: "Larissa Zhou"
 description: ""
 url: "https://larissazhou.github.io"
 baseurl:  # leave empty for user/organization sites
-theme: 
+theme: minima
 plugins:
   - jekyll-feed
 markdown: kramdown
