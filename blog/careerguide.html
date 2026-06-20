@@ -21,6 +21,149 @@
 
     <!-- Custom styles for this template -->
     <link href="/cover.css" rel="stylesheet">
+    
+    <style>
+      :root {
+        --sidebar-width: 280px;
+        --main-color: #00cc66;
+        --accent-color: #dac05b;
+      }
+
+      .blog-wrapper {
+        display: grid;
+        grid-template-columns: 1fr var(--sidebar-width);
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 100px 20px 40px;
+      }
+
+      .blog-content {
+        order: -1;
+      }
+
+      .toc-sidebar {
+        order: 0;
+      }
+
+      /* Sticky Table of Contents */
+      .sticky-toc {
+        position: sticky;
+        top: 80px;
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
+        background: white;
+        border-left: 4px solid var(--main-color);
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .sticky-toc h3 {
+        color: var(--main-color);
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .sticky-toc ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .sticky-toc li {
+        margin: 0.5rem 0;
+      }
+
+      .sticky-toc a {
+        color: #555;
+        text-decoration: none;
+        display: block;
+        padding: 0.5rem 0;
+        border-left: 3px solid transparent;
+        padding-left: 0.75rem;
+        transition: all 0.3s ease;
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+
+      .sticky-toc a:hover {
+        color: var(--main-color);
+        border-left-color: var(--main-color);
+      }
+
+      .sticky-toc a.active {
+        color: var(--main-color);
+        font-weight: 600;
+        border-left-color: var(--main-color);
+      }
+
+      /* Nested links */
+      .sticky-toc li ul {
+        padding-left: 1rem;
+        margin-top: 0.5rem;
+        border-left: 1px solid #e0e0e0;
+        margin-left: 0;
+      }
+
+      .sticky-toc li ul a {
+        font-size: 0.85rem;
+        color: #777;
+      }
+
+      .blog-content h2 {
+        scroll-margin-top: 100px;
+      }
+
+      .blog-content h3 {
+        scroll-margin-top: 100px;
+      }
+
+      /* Scrollbar styling for TOC */
+      .sticky-toc::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      .sticky-toc::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+      }
+
+      .sticky-toc::-webkit-scrollbar-thumb {
+        background: var(--main-color);
+        border-radius: 10px;
+      }
+
+      .sticky-toc::-webkit-scrollbar-thumb:hover {
+        background: #009d4d;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 992px) {
+        .blog-wrapper {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+
+        .blog-content {
+          order: 0;
+        }
+
+        .toc-sidebar {
+          order: -1;
+        }
+
+        .sticky-toc {
+          position: relative;
+          top: auto;
+          max-height: none;
+          margin-bottom: 2rem;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -45,40 +188,143 @@
             </div>
           </div>
 
-          <div class="inner cover">
-            <!--h1 class="cover-heading">Larissa Zhou</h1-->
+          <div class="blog-wrapper">
+            <!-- Main Content -->
+            <div class="blog-content">
+              <div class="inner cover">
+                <p style="text-align:center;">
+                </p><b><font color="#00cc66">BLOG</font></b>
+                <p class="lead">
+                <br><b>How to transition into a food science career</b>
+                <br><i>2026-06-19</i>
+                <br><br>
 
-            <p style="text-align:center;">
-            </p><b><font color="#00cc66">BLOG</font></b>
-            <p class="lead">
-            <br><b>How to transition into a food science career</b>
-            <br><i>2026-06-19</i>
-            <br>
-            <b>1. Learn what type of career you want</b>
-            <br><br>Goal: Go from "I want to work with food" to "I think I want to work in formulation for alt-protein."
-            <br><br>It’s natural to want to be in the food business because you love food, eating, and/or cooking. Check in with yourself that you don’t confuse the enjoyment of food with enjoying an operational career in food. The former is arguably necessary, but definitely not sufficient, for the latter. 
-            <br><br>For example, you might enjoy cooking at home or throwing dinner parties occasionally and not want to run a restaurant as a job. How do you find that out? By gathering data through low-stakes micro-experiments: 
-            <br><br>independent research: I recommend spending 30 minutes a day for at least 2 weeks seriously researching the industry.
-            <p></p><ul><li>industry-insider newsletters</li>
-              <ul>
-              <li>AgFunderNews</li>
-              <li>FoodDive</li>
-              <li>FoodTechWeekly</li>
-              </ul>
-              <li>My Food Job Rocks: Listen to Adam Yee’s interviews with product developers, research chefs, QC/QA experts, food safety specialists, sensory scientists, supply chain specialists, etc.</li>
-              <li>books</li>
+                <h2 id="learn-career-type"><b>1. Learn what type of career you want</b></h2>
+                <p>
+                <b>Goal:</b> Go from "I want to work with food" to "I think I want to work in formulation for alt-protein."
+                <br><br>It's natural to want to be in the food business because you love food, eating, and/or cooking. Check in with yourself that you don't confuse the enjoyment of food with enjoying a food business career.
+                <br><br>For example, you might enjoy cooking at home or throwing dinner parties occasionally and not want to run a restaurant as a job. How do you find that out? By gathering data through:
+                </p>
+
+                <h3 id="independent-research"><b>Independent Research</b></h3>
+                <p>I recommend spending 30 minutes a day for at least 2 weeks seriously researching the industry.</p>
                 <ul>
-                  <li>Hooked by Michael Moss</li>
-                  <li>Flavorama by Arielle Johnson</li>
+                  <li><b>Industry-insider newsletters:</b>
+                    <ul>
+                      <li>AgFunderNews</li>
+                      <li>FoodDive</li>
+                      <li>FoodTechWeekly</li>
+                    </ul>
+                  </li>
+                  <li><b>Podcasts:</b> My Food Job Rocks - Listen to Adam Yee's interviews with product developers, research chefs, QC/QA experts, food safety specialists, sensory scientists, and supply chain specialists.
+                  </li>
+                  <li><b>Books:</b>
+                    <ul>
+                      <li>Hooked by Michael Moss</li>
+                      <li>Flavorama by Arielle Johnson</li>
+                    </ul>
+                  </li>
                 </ul>
-            </p>
-              
 
+                <h3 id="informational-interviews"><b>Informational Interviews</b></h3>
+                <p>
+                Reach out to 5-10 people working in food science roles. Ask them about their day-to-day work, career path, and what they wish they'd known starting out. Most people are happy to chat for 20-30 minutes if you're genuine and respectful of their time.
+                </p>
 
-             </p>
-            <!--p class="lead">
-              <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-            </p-->
+                <h3 id="job-shadowing"><b>Job Shadowing or Plant Tours</b></h3>
+                <p>
+                Many food companies offer tours or have informational days. This gives you a real sense of what the environment is like and what people actually do.
+                </p>
+
+                <h2 id="build-relevant-skills"><b>2. Build Relevant Skills</b></h2>
+                <p>
+                <b>Goal:</b> Develop expertise that makes you competitive for food science positions.
+                <br><br>Depending on the role you're targeting, you may need:
+                </p>
+                <ul>
+                  <li>Technical knowledge (food chemistry, microbiology, nutrition)</li>
+                  <li>Analytical skills (statistical analysis, lab techniques)</li>
+                  <li>Product development experience</li>
+                  <li>Regulatory knowledge (FDA, FSMA, labeling)</li>
+                  <li>Software proficiency (R, Python, Excel, JMP)</li>
+                </ul>
+
+                <h3 id="formal-education"><b>Formal Education vs. Self-Study</b></h3>
+                <p>
+                Consider whether a degree, certification, or self-directed learning makes sense for your timeline and budget. Many roles require a science degree, but you can supplement with specialized courses.
+                </p>
+
+                <h2 id="network"><b>3. Build Your Network</b></h2>
+                <p>
+                <b>Goal:</b> Create relationships with people in the industry who can provide guidance and opportunities.
+                <br><br>Attend industry conferences, join professional organizations (like the Institute of Food Technologists), and engage on LinkedIn. The food industry is surprisingly small and connected.
+                </p>
+
+                <h2 id="gain-experience"><b>4. Gain Practical Experience</b></h2>
+                <p>
+                <b>Goal:</b> Get your foot in the door with internships, entry-level roles, or side projects.
+                <br><br>Even if your first role isn't perfect, it gets you experience, references, and a clearer picture of where you want to go next.
+                </p>
+
+                <h3 id="internships"><b>Internships</b></h3>
+                <p>If you're a student, prioritize getting one or more food science internships before graduation.</p>
+
+                <h3 id="entry-level-roles"><b>Entry-Level Roles</b></h3>
+                <p>QA/QC technician, food safety coordinator, or production associate roles often don't require deep experience and can be great starting points.</p>
+
+                <h3 id="side-projects"><b>Side Projects</b></h3>
+                <p>Launch a small food product, document the process, and share what you learned. This shows initiative and practical knowledge.</p>
+
+                <h2 id="iterate"><b>5. Iterate and Refine</b></h2>
+                <p>
+                <b>Goal:</b> Continuously update your understanding of what you want and what you're capable of.
+                <br><br>After each experience, reflect:
+                </p>
+                <ul>
+                  <li>Did I enjoy this type of work?</li>
+                  <li>What energized me? What drained me?</li>
+                  <li>What gaps do I need to fill?</li>
+                  <li>Is this the right next step?</li>
+                </ul>
+
+                <br><br>
+
+                </p>
+              </div>
+            </div>
+
+            <!-- Sticky Table of Contents -->
+            <aside class="toc-sidebar">
+              <nav class="sticky-toc">
+                <h3>Contents</h3>
+                <ul>
+                  <li>
+                    <a href="#learn-career-type">1. Learn Career Type</a>
+                    <ul>
+                      <li><a href="#independent-research">Independent Research</a></li>
+                      <li><a href="#informational-interviews">Informational Interviews</a></li>
+                      <li><a href="#job-shadowing">Job Shadowing</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#build-relevant-skills">2. Build Relevant Skills</a>
+                    <ul>
+                      <li><a href="#formal-education">Formal Education vs. Self-Study</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#network">3. Build Your Network</a></li>
+                  <li>
+                    <a href="#gain-experience">4. Gain Practical Experience</a>
+                    <ul>
+                      <li><a href="#internships">Internships</a></li>
+                      <li><a href="#entry-level-roles">Entry-Level Roles</a></li>
+                      <li><a href="#side-projects">Side Projects</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#iterate">5. Iterate and Refine</a></li>
+                </ul>
+              </nav>
+            </aside>
           </div>
 
           <div class="mastfoot">
@@ -98,9 +344,65 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous" crossorigin="anonymous"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Scroll Spy Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+            const navLink = document.querySelector(`.sticky-toc a[href="#${id}"]`);
+            
+            if (navLink) {
+              // Remove active class from all links
+              document.querySelectorAll('.sticky-toc a').forEach(link => {
+                link.classList.remove('active');
+              });
+              
+              // Add active class to current section
+              if (entry.isIntersecting) {
+                navLink.classList.add('active');
+              }
+            }
+          });
+        }, {
+          rootMargin: '-100px 0px -66% 0px',
+          threshold: 0
+        });
+
+        // Observe all headings
+        document.querySelectorAll('h2, h3').forEach(heading => {
+          observer.observe(heading);
+        });
+
+        // Smooth scroll behavior for TOC links
+        document.querySelectorAll('.sticky-toc a').forEach(link => {
+          link.addEventListener('click', function(e) {
+            if (this.getAttribute('href').startsWith('#')) {
+              e.preventDefault();
+              const targetId = this.getAttribute('href').substring(1);
+              const targetElement = document.getElementById(targetId);
+              
+              if (targetElement) {
+                targetElement.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start'
+                });
+                
+                // Update active state immediately
+                document.querySelectorAll('.sticky-toc a').forEach(l => {
+                  l.classList.remove('active');
+                });
+                this.classList.add('active');
+              }
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
