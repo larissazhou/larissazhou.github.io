@@ -1,88 +1,329 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Larissa Zhou - COACHING</title>
+<meta name="description" content="Thank you for scheduling your strategy session with Larissa Zhou.">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+<meta name="google-site-verification" content="k_2651duOyikSuOZbVz_05QvjVqtPhTL4TAyVyz7-YM" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#000000;
+    --card:#131313;
+    --card-border:rgba(255,255,255,0.09);
+    --green:#2ecc71;
+    --blue:#6cb6ff;
+    --text:#f2f2f2;
+    --muted:#b9b9b9;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{
+    max-width:760px;
+    margin:0 auto;
+    padding:64px 24px 96px;
+  }
+  h1,h2,h3{
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    color:var(--green);
+    margin:0;
+  }
+  .eyebrow{
+    text-align:center;
+    font-family:'Poppins',sans-serif;
+    font-weight:800;
+    letter-spacing:0.08em;
+    color:var(--green);
+    font-size:clamp(20px,3.2vw,28px);
+    margin-bottom:40px;
+  }
+  .hero{
+    text-align:center;
+    margin-bottom:56px;
+  }
+  .hero h1{
+    font-size:clamp(26px,4.2vw,36px);
+    line-height:1.3;
+  }
+  .hero .lede{
+    margin:20px auto 0;
+    max-width:480px;
+    color:var(--muted);
+    font-size:17px;
+  }
+  .step{
+    margin-bottom:64px;
+  }
+  .step h2{
+    font-size:clamp(20px,3vw,26px);
+    letter-spacing:0.03em;
+    text-transform:uppercase;
+    margin-bottom:20px;
+  }
+  .step > p{
+    font-size:16.5px;
+    color:var(--text);
+    margin:0 0 14px;
+  }
+  .step > p strong{
+    color:#ffffff;
+  }
+  .step-intro{
+    color:var(--muted) !important;
+  }
+  .subhead{
+    font-family:'Poppins',sans-serif;
+    font-weight:600;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:0.1em;
+    color:var(--blue);
+    margin:40px 0 16px;
+  }
+  .case-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+  }
+  @media (max-width:600px){
+    .case-grid{grid-template-columns:1fr;}
+  }
+  .case-card.featured{
+    display:flex;
+    flex-direction:row;
+    padding:0;
+    gap:0;
+    overflow:hidden;
+    margin-bottom:14px;
+  }
+  @media (max-width:600px){
+    .case-card.featured{flex-direction:column;}
+  }
+  .featured-media{
+    position:relative;
+    flex:0 0 280px;
+    background:#000;
+  }
+  @media (max-width:600px){
+    .featured-media{flex:0 0 auto;aspect-ratio:16/9;}
+  }
+  .featured-media img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .play-badge{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:54px;
+    height:54px;
+    border-radius:50%;
+    background:rgba(0,0,0,0.6);
+    border:2px solid #ffffff;
+    color:#ffffff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    padding-left:4px;
+  }
+  .featured-body{
+    padding:20px 24px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:12px;
+  }
+  .featured-body .case-title{
+    font-size:17px;
+    font-weight:600;
+  }
+  .case-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    gap:14px;
+    background:var(--card);
+    border:1px solid var(--card-border);
+    border-radius:10px;
+    padding:18px 20px;
+    text-decoration:none;
+    color:var(--text);
+    transition:border-color 0.15s ease, transform 0.15s ease;
+  }
+  .case-card:hover{
+    border-color:var(--blue);
+    transform:translateY(-2px);
+  }
+  .case-title{
+    font-size:15px;
+    font-weight:500;
+    line-height:1.45;
+  }
+  .case-quote{
+    font-style:italic;
+    font-size:13.5px;
+    line-height:1.5;
+    color:var(--muted);
+    margin:0;
+  }
+  .case-cta{
+    font-family:'Poppins',sans-serif;
+    font-size:13px;
+    font-weight:600;
+    color:var(--blue);
+    letter-spacing:0.02em;
+  }
+  .testimonial-grid{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+  .testimonial{
+    background:var(--card);
+    border:1px solid var(--card-border);
+    border-left:3px solid var(--green);
+    border-radius:10px;
+    padding:20px 22px;
+    margin:0;
+  }
+  .testimonial p{
+    margin:0 0 12px;
+    font-size:15.5px;
+    color:var(--text);
+    font-style:italic;
+  }
+  .testimonial cite{
+    font-style:normal;
+    font-family:'Poppins',sans-serif;
+    font-weight:600;
+    font-size:13.5px;
+    color:var(--blue);
+  }
+  .step-note{
+    margin-top:32px !important;
+    padding-top:20px;
+    border-top:1px solid var(--card-border);
+    color:var(--muted) !important;
+  }
+  footer{
+    text-align:center;
+    margin-top:24px;
+  }
+  footer p{
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    color:var(--green);
+    font-size:18px;
+  }
+</style>
+</head>
+<body>
+<main>
 
-    <meta name="google-site-verification" content="k_2651duOyikSuOZbVz_05QvjVqtPhTL4TAyVyz7-YM" />
+  <p class="eyebrow">LARISSA ZHOU COACHING</p>
 
-    <title>Larissa Zhou - COACHING</title>
+  <header class="hero">
+    <h1>Thank You for Scheduling Your Strategy Session!</h1>
+    <p class="lede">Prior to your session, please make sure to do the following:</p>
+  </header>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+  <section class="step">
+    <h2>Step 1: Add the Session to Your Calendar</h2>
+    <p>In your inbox, look for an email from Cal.com. Open it and scroll down — you'll find the Zoom link and buttons to add the appointment to your calendar.</p>
+    <p><strong>Accept the invite</strong> so the session gets booked on both of our calendars.</p>
+    <p>Set aside that time for yourself, so you show up fully present and with no distractions, to get the most out of the session.</p>
+  </section>
 
-    <!-- Custom fonts for this template -->
-   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <section class="step">
+    <h2>Step 2: Check Out These Case Studies</h2>
+    <p class="step-intro">Take a few minutes to look through results from past clients below — it's a good way to get a feel for what's possible before your call.</p>
 
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-  </head>
+    <h3 class="subhead">Case Studies</h3>
 
-  <body>
-
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="fixed-nav-bar">
-            <div class="inner">
-              <h3 class="masthead-brand"><font color="#00cc66">LARISSA ZHOU COACHING</font></h3>
-              <nav class="nav nav-masthead">
-                <a class="nav-link" href="coaching.html">COACHING</a>
-                <a class="nav-link" href="mycoachingstory.html">ABOUT</a>
-                <a class="nav-link" href="blog/">BLOG</a>
-                <a class="nav-link" href="theirwords.html">RESULTS</a>
-                <a class="nav-link active" href="apply.html">WORK WITH ME</a>
-
-              </nav>
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <!--h1 class="cover-heading">Larissa Zhou</h1-->
-
-            <p style="text-align:center;">
-            </p><b><font color="#00cc66">Thank You for Scheduling Your Strategy Session!</font></b>
-            <p class="lead">
-            <br>Prior to your session, please make sure to do the following:
-            <br><br><b>Step 1: Add the session to your calendar</b> In your inbox, look for an email from Cal.com. When you open the email and scroll down, you’ll find the Zoom link and buttons to add the appointment to your calendar.
-            <br><br><b>Step 2. Prepare for your session</b>
-            <br>     1. <a href="https://larissazhou.github.io/theirwords.html" target="_blank">Review past client results</a>
-            <br>     2. Write down any questions you have so we can go through them together during your call
-            <br><br><b>3. Attend your session</b>
-            <br> On the call, we’ll discuss your situation and help you get clarity on what's blocking you and how to reach your goals. 
-  <!--p class="lead">
-              <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-            </p-->
-          </div>
-
-          <div class="mastfoot">
-            <!--div class="inner">
-              <p>Cover template for <a href="https://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div-->
-          </div>
-
-        </div>
-
+    <a class="case-card featured" href="blog/blake.html">
+      <div class="featured-media">
+        <img src="https://img.youtube.com/vi/R1YatqQMSDQ/hqdefault.jpg" alt="Watch Blake's case study video" loading="lazy">
+        <span class="play-badge" aria-hidden="true">▶</span>
       </div>
+      <div class="featured-body">
+        <span class="case-title">How Blake Went From Corporate SVP to Founding the Consultancy He Wished He Worked At</span>
+        <span class="case-cta">Watch the case study →</span>
+      </div>
+    </a>
 
+    <div class="case-grid">
+      <a class="case-card" href="blog/liz.html">
+        <span class="case-title">Why I Told Liz Not to Get a Job (And How She Got One Anyway)</span>
+        <span class="case-quote">"Since working with Larissa, I got a job offer that will bring me back into the workforce after more than two years out of the game."</span>
+        <span class="case-cta">Read the case study →</span>
+      </a>
+      <a class="case-card" href="blog/marta.html">
+        <span class="case-title">Marta Stopped Seeking Approval and Started Commanding Respect</span>
+        <span class="case-quote">"Larissa helped me deep dive into all my past achievements and see value in what I do. I was able to realize that the problem isn't me."</span>
+        <span class="case-cta">Read the case study →</span>
+      </a>
+      <a class="case-card" href="blog/stefan.html">
+        <span class="case-title">Stefan Changed a Job He Wasn't Crazy About to a Job He Likes, Without Switching Jobs</span>
+        <span class="case-quote">"I have a concrete sustainable framework I am using to steward and grow my career in a way that aligns with my values."</span>
+        <span class="case-cta">Read the case study →</span>
+      </a>
+      <a class="case-card" href="blog/will.html">
+        <span class="case-title">Will Stopped Waiting for &ldquo;The Right Time&rdquo; and Built His Business Instead</span>
+        <span class="case-quote">"I went from wanting my business to be my full-time job to totally doing that."</span>
+        <span class="case-cta">Read the case study →</span>
+      </a>
+      <a class="case-card" href="blog/zach.html">
+        <span class="case-title">Zach Broke Into the Food Industry With a CS Degree</span>
+        <span class="case-quote">"I've made a huge career change. I started out working in computer science and now I'm working in food science."</span>
+        <span class="case-cta">Read the case study →</span>
+      </a>
+      <a class="case-card" href="blog/thomas.html">
+        <span class="case-title">Thomas Is No Longer Afraid of Interpersonal Conflict</span>
+        <span class="case-quote">"I've become much more comfortable standing up for my needs and desires, my beliefs and my opinions in heated situations…"</span>
+        <span class="case-cta">Read the case study →</span>
+      </a>
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+    <h3 class="subhead">More Testimonials</h3>
+    <div class="testimonial-grid">
+      <blockquote class="testimonial">
+        <p>"Larissa and I 'unpeeled the onion' over the course of my program and while we have had very different career paths, I was frankly shocked by her keen sense of understanding of relationship dynamics, especially the one with yourself. It was an invaluable experience where I gained greater awareness of how I move through the world, new mindsets to bring my best foot forward and also structured coaching that gave me the templates for changing my behavior to better achieve who I want to be and how to get there."</p>
+        <cite>— Janet, Strategy Consultant</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"I had felt stuck in my career for quite some time. Working with Larissa helped me get started, clarify where I wanted to go, and better understand what was holding me back. Larissa challenged my mindset in helpful and surprising ways. She identified assumptions that I had not appreciated before, and followed with advice that felt incredibly to-the-point. Her honest, yet understanding and motivating communication style inspired me. I recommend Larissa to anyone needing help with taking the next step in their career."</p>
+        <cite>— A.S., Data Scientist</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"Working with Larissa was a transformative experience. I came to her looking for clarity on the next stage of my career, and through her thoughtful combination of 1-on-1 sessions, well-designed homework assignments, and timely asynchronous discussions, I gained a deeper understanding of my goals. Each session felt incredibly productive, and I left feeling more excited and confident about my future. Larissa's approach is perfect for anyone in a leadership role who is ready for self-discovery and growth. I highly recommend her to anyone looking for guidance in their career journey."</p>
+        <cite>— J.L., CTO</cite>
+      </blockquote>
+    </div>
+
+    <p class="step-note">Also: write down any questions you have, so we can go through them together during your call.</p>
+  </section>
+
+  <footer>
+    <p>See you on the call!</p>
+  </footer>
+
+</main>
+</body>
 </html>
